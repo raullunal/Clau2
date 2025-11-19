@@ -3,34 +3,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claudia Aguirre | Especialista en E-Learning</title>
+    <title>Claudia Aguirre | Especialista en E-learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="logo">Claudia Aguirre</div>
-    <ul class="nav-links">
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo">CLAUDIA AGUIRRE</div>
+            
+            <div class="nav-links desktop-menu">
+                <a href="#solutions">Soluciones</a>
+                <a href="#services">Servicios</a>
+                <a href="#results">Resultados</a>
+                <a href="#about">Sobre Mí</a>
+                <a href="#contact" class="btn-primary btn-small">Diagnóstico Gratuito</a>
+            </div>
 
-    <!-- Toggle Dark Mode -->
-    <button class="toggle-btn" id="toggleDark">🌙</button>
-</nav>
+            <button class="mobile-menu-btn" id="menu-toggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Especialista en E-Learning y Gestión de Proyectos</h1>
-        <p>Más de 20 años diseñando e implementando soluciones digitales de formación para organizaciones.</p>
-        <a href="#contacto" class="btn-primary">Trabajemos juntos</a>
-    </div>
-</section>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#solutions" class="mobile-link">Soluciones</a>
+            <a href="#services" class="mobile-link">Servicios</a>
+            <a href="#results" class="mobile-link">Resultados</a>
+            <a href="#about" class="mobile-link">Sobre Mí</a>
+            <a href="#contact" class="btn-primary mobile-link">Diagnóstico Gratuito</a>
+        </div>
+    </nav>
 
-<!-- Resto del contenido igual... -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="badge">Especialista en E-learning y Gestión de Proyectos</div>
+                <h1>Transforma el Talento de tu Organización con <span class="text-gradient">Estrategias de Formación Virtual</span> que Sí Generan Resultados.</h1>
+                <p>Optimiza la capacitación, reduce costos y escala el aprendizaje de tu equipo. Más de 20 años diseñando experiencias educativas digitales.</p>
+                <a href="#contact" class="btn-primary btn-large">
+                    Solicitar Diagnóstico Gratuito
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=1000&auto=format&fit=crop" alt="Claudia Aguirre">
+                <div class="hero-image-caption">Innovación educativa corporativa</div>
+            </div>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <p class="section-label-center">Han confiado en mi gestión estratégica</p>
+            <div class="logos-grid">
+                <span class="client-logo">educ.ar</span>
+                <span class="client-logo">Sedronar</span>
+                <span class="client-logo">Hospital Bonaparte</span>
+                <span class="client-logo">FINNEGANS</span>
+                <span class="client-logo">Sanatorio Mater Dei</span>
+                <span class="client-logo">ASAEDE</span>
+                <span class="client-logo">Fundartox</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem / Solution -->
+    <section id="solutions" class="section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Tu empresa invierte en capacitación pero no ve el retorno?</h2>
+                <p>En un entorno laboral en constante cambio, los cursos estáticos ya no funcionan. Necesitas herramientas ágiles.</p>
+            </div>
+
+            <div class="comparison-grid">
+                <!-- Problem -->
+                <div class="card problem-card">
+                    <h3>
+                        <span class="icon-box red"><i data-lucide="x-circle"></i></span>
+                        El Problema Actual
+                    </h3>
+                    <ul>
+                        <li><i data-lucide="x-circle" class="text-red"></i> Capacitaciones aburridas con baja tasa de finalización.</li>
+                        <li><i data-lucide="x-circle" class="text-red"></i> Falta de alineación con los objetivos del negocio.</li>
+                        <li><i data-lucide="x-circle" class="text-red"></i> Dificultad para medir el impacto real.</li>
+                    </ul>
+                </div>
+
+                <!-- Solution -->
+                <div class="card solution-card">
+                    <h3>
+                        <span class="icon-box teal"><i data-lucide="check-circle-2"></i></span>
+                        Mi Solución
+                    </h3>
+                    <p>Diseño ecosistemas de aprendizaje a medida que garantizan la adaptabilidad empresarial.</p>
+                    <ul>
+                        <li><i data-lucide="check-circle-2" class="text-teal"></i> Contenidos dinámicos y de alto engagement.</li>
+                        <li><i data-lucide="check-circle-2" class="text-teal"></i> Estrategias alineadas 100% a KPIs.</li>
+                        <li><i data-lucide="check-circle-2" class="text-teal"></i> Métricas claras de progreso y ROI.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-white">
+        <div class="container">
+            <div class="section-header">
+                <span class="label">Servicios Especializados</span>
+                <h2>Ecosistemas de Aprendizaje Integral</h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="card service-card">
+                    <div class="icon-large"><i data-lucide="bar-chart-3"></i></div>
+                    <h3>Consultoría y Diagnóstico</h3>
+                    <p>Alineación de la formación digital con tus KPIs de negocio. Detección de necesidades de talento.</p>
+                </div>
+                <div class="card service-card">
+                    <div class="icon-large"><i data-lucide="layers"></i></div>
+                    <h3>Gestión Integral E-learning</h3>
+                    <p>Desde el diseño instruccional hasta la implementación técnica. Liderazgo de equipos multidisciplinarios.</p>
+                </div>
+                <div class="card service-card">
+                    <div class="icon-large"><i data-lucide="zap"></i></div>
+                    <h3>Microaprendizaje</h3>
+                    <p>Diseño de píldoras de aprendizaje de alto impacto. Contenidos breves, autogestionados y ágiles.</p>
+                </div>
+                <div class="card service-card">
+                    <div class="icon-large"><i data-lucide="users-2"></i></div>
+                    <h3>Formación de Formadores</h3>
+                    <p>Capacito a tu equipo interno para que puedan gestionar y facilitar sus propios programas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2>No solo diseño cursos, genero impacto medible.</h2>
+                <p class="text-light">Resultados comprobados en proyectos de gran escala.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">+300k</div>
+                    <div class="stat-label">Destinatarios Alcanzados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">+80%</div>
+                    <div class="stat-label">Tasa de Finalización</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">+2k</div>
+                    <div class="stat-label">Usuarios Simultáneos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">+50</div>
+                    <div class="stat-label">Píldoras Implementadas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-white">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="img_1_87.png?q=80&w=976&auto=format&fit=crop" alt="Claudia Aguirre">
+                    <div class="blob-1"></div>
+                    <div class="blob-2"></div>
+                </div>
+                <div class="about-text">
+                    <span class="label">Sobre Mí</span>
+                    <h2>Hola, soy Claudia Aguirre.</h2>
+                    <p class="lead">Soy una profesional calificada con un enfoque único: combino la lógica de procesos con la psicología humana.</p>
+                    
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <div class="icon-small"><i data-lucide="brain"></i></div>
+                            <div>
+                                <h4>Mente Estratégica</h4>
+                                <p>Lic. en Investigación Operativa & Analista de Sistemas (UCA)</p>
+                            </div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="icon-small"><i data-lucide="users"></i></div>
+                            <div>
+                                <h4>Foco en Personas</h4>
+                                <p>Operadora en Psicología Social</p>
+                            </div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="icon-small"><i data-lucide="graduation-cap"></i></div>
+                            <div>
+                                <h4>Especialista Educativa</h4>
+                                <p>Posgrado en Diseño de Proyectos E-learning (UNSAM)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-light">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Info -->
+                <div class="contact-info">
+                    <h2>¿Listo para potenciar el talento de tu equipo?</h2>
+                    <p>Si buscas optimizar la formación en tu empresa con soluciones digitales personalizadas, hablemos hoy.</p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:clau.ale.aguirre@gmail.com"><i data-lucide="mail"></i> clau.ale.aguirre@gmail.com</a>
+                        <a href="https://wa.me/5491164932075"><i data-lucide="phone"></i> +54 9 11 6493-2075</a>
+                    </div>
+
+                    <a href="#" class="btn-secondary">
+                        <i data-lucide="calendar"></i> Agendar llamada estratégica
+                    </a>
+                </div>
+
+                <!-- Form -->
+                <div class="contact-form-wrapper">
+                    <h3>Solicitar Diagnóstico</h3>
+
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xnnwzjqy" method="POST">
+                    <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" name="nombre" placeholder="Juan Pérez" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                            <label for="email">Correo Corporativo</label>
+                            <input type="email" id="email" placeholder="juan@empresa.com">
+                    </div>
+                    <div class="form-group">
+                            <label for="message">Tu Desafío Actual</label>
+                            <textarea id="mensaje" rows="4" placeholder="Cuéntame brevemente tu desafío..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">
+                            Enviar Consulta <i data-lucide="arrow-right"></i>
+                    </button>
+</form>
+<!--
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" placeholder="Juan Pérez">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Corporativo</label>
+                            <input type="email" id="email" placeholder="juan@empresa.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tu Desafío Actual</label>
+                            <textarea id="message" rows="4" placeholder="Cuéntame brevemente tu desafío..."></textarea>
+                        </div>
+                        <button type="button" class="btn-primary full-width">
+                            Enviar Consulta <i data-lucide="arrow-right"></i>
+                        </button>
+                    </form>
+-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">CLAUDIA AGUIRRE</div>
+            <div class="copyright">
+                <p>&copy; 2025 Claudia Aguirre - Especialista en E-learning.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+    </script>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>
