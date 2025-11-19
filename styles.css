@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg: #f7f7f9;
+    --text: #222;
+    --card: #ffffff;
+    --accent: #ffca3a;
+    --bg-secondary: #e6e6eb;
+}
+
+/* DARK MODE VARIABLES */
+.dark {
+    --bg: #101015;
+    --text: #e6e6e9;
+    --card: #1b1b23;
+    --accent: #ffd447;
+    --bg-secondary: #23232d;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+.navbar {
+    background: var(--card);
+    border-bottom: 1px solid var(--bg-secondary);
+}
+
+.hero {
+    background: linear-gradient(135deg, #272742, #44446d);
+    color: white;
+}
+
+/* Componentes generales */
+.service-card {
+    background: var(--card);
+    border: 1px solid var(--bg-secondary);
+}
+
+.metric span {
+    color: var(--accent);
+}
+
+input, textarea {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--bg-secondary);
+}
+
+/* Toggle button */
+.toggle-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--text);
+}
